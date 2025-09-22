@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuvio.extension">
+
+    <application
+        android:label="Nuvio Extension"
+        android:icon="@mipmap/ic_launcher">
+
+        <service
+            android:name=".NuvioExtension"
+            android:exported="true"
+            android:permission="com.battlelancer.seriesguide.api.ACCESS_EXTENSION">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.Extension" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>
